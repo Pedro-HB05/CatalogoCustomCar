@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Car</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <header class="container-fluid header-bg">
+        <div class="container py-3">
+            <nav class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <p class="logo">Custom Car</p>
+                </div>
+                <div class="col-auto">
+                    <ul class="d-flex align-items-center gap-3 m-0">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Peças
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Rodas</a></li>
+                                <li><a class="dropdown-item" href="#">Escapamento</a></li>
+                                <li><a class="dropdown-item" href="#">Suspensão</a></li>
+                                <li><a class="dropdown-item" href="#">Autofalante</a></li>
+                                <li><a class="dropdown-item" href="#">Multimídia</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button>Login</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row align-items-center mt-4 bloco-cabecalho">
+                <div class="col-lg-6 col-md-12 texto">
+                    <h2>Tudo que precisa para customizar seu carro!</h2>
+                    <p>
+                        Personalize seu carro com facilidade e estilo,
+                        escolhendo entre os melhores produtos do mercado.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 text-center">
+                    <img src="imagens/imagem-cabecalho.jpg" class="img-fluid rounded" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container-fluid catalogo py-5" id="catalogo">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h3 class="text-danger">MAIS VENDIDOS</h3>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-6 col-sm-12 d-flex">
+                    <input type="text" class="form-control" placeholder="Pesquise aqui">
+                    <button class="btn btn-danger ms-2">Pesquisar</button>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/roda bbs.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Roda BBS Aro 18</h5>
+                            <p class="card-text">Jogo de Rodas BBS aro 18 furação 4x100.</p>
+                            <a class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/roda orbital.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Roda Orbital VW Aro 17</h5>
+                            <p class="card-text">Jogo de roda orbital Volkswagen aro 17 furação 4x100.</p>
+                            <a class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/mola esportiva.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Mola Esportiva RedCoil</h5>
+                            <p class="card-text">Mola esportiva Redcoil universal</p>
+                            <a class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/suspensão a ar.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Suspensão a ar</h5>
+                            <p class="card-text">Kit completo suspensão a ar stage 2</p>
+                            <a class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/multimidia pionner.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Multimídia Pionner</h5>
+                            <p class="card-text">Multimídia Pionner completa.</p>
+                            <a class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/kit autofalnte.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit Autofalante Bravox</h5>
+                            <p class="card-text">Kit autofalante Bravox par de 6x9 + par de 6'</p>
+                            <a class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid sobre" id="sobre">
+        <div class="container">
+
+            <div class="row text-center mb-5">
+                <h3 class="text-danger fw-bold">Sobre</h3>
+            </div>
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-5 col-md-12 mb-4">
+                    <img src="imagens/imagem sobre.jpg" class="img-fluid rounded shadow" alt="">
+                </div>
+
+                <div class="col-lg-7 col-md-12">
+                    <h3 class="text-danger">Paixão por carros e personalização</h3>
+                    <p class="sobre-texto">
+                        Fundada por amantes de carros, a <strong>Custom Car</strong> nasceu com o objetivo de oferecer
+                    as melhores peças, acessórios e soluções de customização automotiva. Nosso foco sempre foi
+                    entregar qualidade, bom atendimento e produtos que transformam qualquer carro em uma máquina
+                    única.
+                    <br><br>
+                    Trabalhamos com marcas reconhecidas no mercado, trazendo rodas, multimídias, escapamentos,
+                    kits de suspensão e muito mais. Seja para performance, estilo ou tecnologia, estamos aqui
+                    para ajudar você a deixar seu carro do jeito que sempre sonhou.
+                    <br><br>
+                    Aqui, cada detalhe importa. Seu carro merece o melhor — e nós sabemos disso.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="container-fluid text-center py-3">
+        Site criado para prática de HTML e CSS.
+    </footer>
+
+</body>
+</html>
