@@ -6,7 +6,7 @@
     <title>Custom Car</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,26 +15,23 @@
         <div class="container py-3">
             <nav class="row align-items-center justify-content-between">
                 <div class="col-auto">
-                    <p class="logo">Custom Car</p>
+                    <a href="index.html" class="logo">Custom Car</a>
                 </div>
                 <div class="col-auto">
                     <ul class="d-flex align-items-center gap-3 m-0">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sobre</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
                         <li class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
                                 Peças
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Rodas</a></li>
-                                <li><a class="dropdown-item" href="#">Escapamento</a></li>
-                                <li><a class="dropdown-item" href="#">Suspensão</a></li>
-                                <li><a class="dropdown-item" href="#">Autofalante</a></li>
-                                <li><a class="dropdown-item" href="#">Multimídia</a></li>
+                                <li><a class="dropdown-item" href="rodas.html">Rodas</a></li>
+                                <li><a class="dropdown-item" href="escapamento.html">Escapamento</a></li>
+                                <li><a class="dropdown-item" href="suspensao.html">Suspensão</a></li>
+                                <li><a class="dropdown-item" href="autofalante.html">Autofalante</a></li>
+                                <li><a class="dropdown-item" href="multimidia.html">Multimídia</a></li>
                             </ul>
-                        </li>
-                        <li>
-                            <button>Login</button>
                         </li>
                     </ul>
                 </div>
@@ -165,9 +162,12 @@
     </section>
 
     <!-- ================= FOOTER ================= -->
-    <footer class="container-fluid text-center py-3">
-        Site criado para prática de HTML e CSS.
-    </footer>
+   <footer class="footer-custom mt-5">
+    <div class="container text-center py-4">
+        <p class="mb-1">© 2025 <strong>Custom Car</strong>. Todos os direitos reservados.</p>
+        <p class="text-muted">Site criado para prática de HTML e CSS.</p>
+    </div>
+</footer>
 
 </body>
 </html>
