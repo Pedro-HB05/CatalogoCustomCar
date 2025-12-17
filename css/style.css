@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +16,11 @@ a {
     text-decoration: none;
 }
 
+span {
+    color: white;
+}
+
+/* HEADER / NAVBAR */
 .header-bg {
     background: linear-gradient(135deg, #0b0b0b, #1a1a1a, #300000);
     color: #fff;
@@ -34,6 +40,7 @@ a {
     text-shadow: 0 0 12px #ff1a1a;
 }
 
+/* NAV LINKS */
 nav ul li {
     list-style: none;
 }
@@ -48,6 +55,7 @@ nav ul li a:hover {
     color: #e50914;
 }
 
+/* NAV BUTTON */
 nav ul button {
     border: 2px solid #e50914;
     background: transparent;
@@ -64,6 +72,7 @@ nav ul button:hover {
     box-shadow: 0 0 20px #ff3333;
 }
 
+/* DROPDOWN */
 .dropdown-toggle {
     background-color: #e50914 !important;
     border: none !important;
@@ -92,6 +101,7 @@ nav ul button:hover {
     color: #e50914;
 }
 
+/* CABEÇALHO CONTEUDO */
 .texto h2 {
     color: #e50914;
     font-size: 32px;
@@ -102,24 +112,40 @@ nav ul button:hover {
     color: #ccc;
 }
 
-/* IMAGEM DO CABEÇALHO ORIGINAL */
+.texto-paragrafo {
+    color: #e50914;
+}
+
 .bloco-cabecalho img {
     max-width: 350px;
     border-radius: 10px;
 }
 
-/* CATÁLOGO */
+.bloco-cabecalho > div {
+    margin-bottom: 20px;
+}
+
+.bloco-cabecalho .carousel img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: drop-shadow(2px 2px 2px rgba(255, 0, 0, 0.2));
+}
+
+/* CATALOGO */
 .catalogo {
     background-color: #0b0b0b;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .catalogo h3 {
     color: #e50914;
     text-shadow: 0 0 8px #e50914;
+    padding-bottom: 20px;
 }
 
+/* BOTÃOS */
 button.btn-danger {
     background: #e50914 !important;
     border: none;
@@ -169,8 +195,7 @@ button.btn-danger:hover {
 /* SOBRE */
 .sobre {
     background: linear-gradient(135deg, #0b0b0b, #111, #1a0000);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .sobre h3 {
@@ -202,9 +227,33 @@ footer {
     color: #ccc;
 }
 
-/* ---------------------------
-   RESPONSIVIDADE
-----------------------------*/
+/* MENSAGENS */
+.toast-sucesso,
+.toast-erro {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: fadeInOut 3s ease forwards;
+    max-width: 90%;
+    text-align: center;
+}
+
+.toast-sucesso {
+    background-color: #28a745;
+}
+
+.toast-erro {
+    background-color: #e74c3c;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .texto h2 {
         font-size: 26px;
@@ -229,14 +278,10 @@ footer {
     }
 }
 
-.bloco-cabecalho .carousel img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    filter: drop-shadow(2px 2px 2px rgba(255, 0, 0, 0.2));
-}
-
-.bloco-cabecalho > div {
-    margin-bottom: 20px;
+/* ANIMAÇÃO */
+@keyframes fadeInOut {
+    0% { opacity: 0; top: 10px; }
+    10% { opacity: 1; top: 20px; }
+    90% { opacity: 1; }
+    100% { opacity: 0; top: 10px; }
 }

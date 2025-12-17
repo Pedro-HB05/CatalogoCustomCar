@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rodas – Custom Car</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-    <!-- =============== HEADER / NAV =============== -->
     <header class="container-fluid header-bg">
         <div class="container py-3">
             <nav class="row align-items-center justify-content-between">
@@ -34,121 +31,135 @@
                                 <li><a class="dropdown-item" href="multimidia.html">Multimídia</a></li>
                             </ul>
                         </li>
+                        <li>
+                            <div class="col-auto">
+                                <a href="carrinho.html" class="btn btn-outline-light position-relative">
+                                    🛒
+                                    <span id="contadorCarrinho"
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                                </a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- ================= PÁGINA DE RODAS ================= -->
     <section class="container-fluid py-5 catalogo">
         <div class="container">
 
             <div class="text-center mb-4">
                 <h3 class="text-danger fw-bold">Rodas</h3>
-                <p class="text-muted">Confira nossa seleção de rodas esportivas e originais.</p>
+                <p class="texto-paragrafo">Confira nossa seleção de rodas esportivas e originais.</p>
             </div>
 
-            <div class="row g-4">
+            <div class="produtos-custom row g-4">
 
-                <!-- ======= LINHA 1 ======= -->
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-custom">
-                        <img src="imagens/roda bbs.png" class="card-img-top">
+                        <img src="imagens/rodas/roda bbs.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Roda BBS Aro 18</h5>
                             <p class="card-text">Furação 4x100 — Grafite diamantada</p>
-                            <a class="btn btn-primary">Ver mais</a>
+                            <span class="preco-produto">R$5.750,90</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-custom">
-                        <img src="imagens/roda bbs.png" class="card-img-top">
+                        <img src="imagens/rodas/roda orbital.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Roda Orbital Aro 17</h5>
                             <p class="card-text">Modelo clássico Volkswagen</p>
-                            <a class="btn btn-primary">Ver mais</a>
+                            <span class="preco-produto">R$4.000,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-custom">
-                        <img src="imagens/roda bbs.png" class="card-img-top">
+                        <img src="imagens/rodas/roda kr.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Roda KR Aro 20</h5>
                             <p class="card-text">Design robusto com acabamento premium</p>
-                            <a class="btn btn-primary">Ver mais</a>
+                            <span class="preco-produto">R$6.220,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- ======= LINHA 2 ======= -->
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-custom">
-                        <img src="imagens/roda bbs.png" class="card-img-top">
+                        <img src="imagens/rodas/vulcano strong.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Roda Volcano Strong</h5>
                             <p class="card-text">Aro 18 — Alta resistência e leveza</p>
-                            <a class="btn btn-primary">Ver mais</a>
+                            <span class="preco-produto">R$3.799,99</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-custom">
-                        <img src="imagens/roda bbs.png" class="card-img-top">
+                        <img src="imagens/rodas/bmw m sport.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Roda BMW M-Sport</h5>
                             <p class="card-text">Aro 19 — Original esportiva</p>
-                            <a class="btn btn-primary">Ver mais</a>
+                            <span class="preco-produto">R$6.077,50</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-custom">
-                        <img src="imagens/roda bbs.png" class="card-img-top">
+                        <img src="imagens/rodas/audi rs.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Roda Audi RS</h5>
                             <p class="card-text">Aro 20 — Design exclusivo</p>
-                            <a class="btn btn-primary">Ver mais</a>
+                            <span class="preco-produto">R$11.650,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- ======= LINHA 3 ======= -->
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-custom">
-                        <img src="imagens/roda bbs.png" class="card-img-top">
+                        <img src="imagens/rodas/vulcano attack.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Roda Volcano Attack</h5>
                             <p class="card-text">Aro 17 — Estilo agressivo</p>
-                            <a class="btn btn-primary">Ver mais</a>
+                            <span class="preco-produto">R$4.054,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-custom">
-                        <img src="imagens/roda bbs.png" class="card-img-top">
+                        <img src="imagens/rodas/mercedes.png" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Roda Preto Fosco</h5>
-                            <p class="card-text">Aro 18 — Minimalista e moderna</p>
-                            <a class="btn btn-primary">Ver mais</a>
+                            <h5 class="card-title">Roda Mercedes AMG </h5>
+                            <p class="card-text">Aro 20 — Original Mercedes</p>
+                            <span class="preco-produto">R$6.590,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-custom">
-                        <img src="imagens/roda bbs.png" class="card-img-top">
+                        <img src="imagens/rodas/porsche.png" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Roda Esportiva Azul</h5>
-                            <p class="card-text">Aro 17 — Acabamento exclusivo</p>
-                            <a class="btn btn-primary">Ver mais</a>
+                            <h5 class="card-title">Roda Porsche</h5>
+                            <p class="card-text">Aro 21 — Original Porsche Panamera</p>
+                            <span class="preco-produto">R$11.890,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -157,7 +168,6 @@
         </div>
     </section>
 
-    <!-- =============== FOOTER =============== -->
     <footer class="footer-custom mt-5">
         <div class="container text-center py-4">
             <p class="mb-1">© 2025 <strong>Custom Car</strong>. Todos os direitos reservados.</p>
@@ -165,5 +175,7 @@
         </div>
     </footer>
 
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/carrinho.js"></script>
 </body>
 </html>
