@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Car</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="container-fluid header-bg">
+        <div class="container py-3">
+            <nav class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <a href="index.html" class="logo">Custom Car</a>
+                </div>
+                <div class="col-auto">
+                    <ul class="d-flex align-items-center gap-3 m-0">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Peças
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="rodas.html">Rodas</a></li>
+                                <li><a class="dropdown-item" href="escapamento.html">Escapamento</a></li>
+                                <li><a class="dropdown-item" href="suspensao.html">Suspensão</a></li>
+                                <li><a class="dropdown-item" href="autofalante.html">Autofalante</a></li>
+                                <li><a class="dropdown-item" href="multimidia.html">Multimídia</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="col-auto">
+                                <a href="carrinho.html" class="btn btn-outline-light position-relative">
+                                    🛒
+                                    <span id="contadorCarrinho"
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <div class="avatar-menu">
+                            <img src="imagens/avatar.png" alt="Avatar" class="avatar" onclick="toggleMenu()">
+                            <div id="dropdown" class="dropdown-content"></div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="row align-items-center mt-4 bloco-cabecalho">
+                <div class="col-lg-6 col-md-12 texto">
+                    <h2>Tudo que precisa para customizar seu carro!</h2>
+                    <p>Personalize seu carro com facilidade e estilo, escolhendo entre os melhores produtos do mercado.</p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imagens/imagem-cabecalho.jpg" class="d-block w-100 rounded" alt="Carro Customizado">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagens/cabecalho2.png" class="d-block w-100 rounded" alt="Carro Customizado 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagens/cabecalho3.jpg" class="d-block w-100 rounded" alt="Carro Customizado 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container-fluid catalogo py-5" id="catalogo">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h3 class="text-danger">MAIS VENDIDOS</h3>
+            </div>
+
+            <div class="produtos-custom row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/rodas/roda bbs.png" class="card-img-top" alt="Roda BBS">
+                        <div class="card-body">
+                            <h5 class="card-title">Roda BBS Aro 18</h5>
+                            <p class="card-text">Jogo de Rodas BBS aro 18 furação 4x100.</p>
+                            <span class="preco-produto">R$5632,98</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/rodas/roda orbital.png" class="card-img-top" alt="Roda Orbital">
+                        <div class="card-body">
+                            <h5 class="card-title">Roda Orbital VW Aro 17</h5>
+                            <p class="card-text">Jogo de roda orbital VW aro 17 furação 4x100.</p>
+                            <span class="preco-produto">R$4589,90</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/suspensao/mola esportiva.png" class="card-img-top" alt="Mola Esportiva">
+                        <div class="card-body">
+                            <h5 class="card-title">Mola Esportiva RedCoil</h5>
+                            <p class="card-text">Mola esportiva Redcoil universal</p>
+                            <span class="preco-produto">R$687,99</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/suspensao/suspensão a ar.png" class="card-img-top" alt="Suspensão a ar">
+                        <div class="card-body">
+                            <h5 class="card-title">Suspensão a ar</h5>
+                            <p class="card-text">Kit completo suspensão a ar stage 2</p>
+                            <span class="preco-produto">R$4632,98</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/radio/multimidia pionner.png" class="card-img-top" alt="Multimídia Pionner">
+                        <div class="card-body">
+                            <h5 class="card-title">Multimídia Pionner</h5>
+                            <p class="card-text">Multimídia Pionner completa.</p>
+                            <span class="preco-produto">R$510,99</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/autofalante/kit autofalnte.png" class="card-img-top" alt="Kit Autofalante Bravox">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit Autofalante Bravox</h5>
+                            <p class="card-text">Kit autofalante Bravox par de 6x9 + par de 6'</p>
+                            <span class="preco-produto">R$232,99</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid sobre" id="sobre">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <h3 class="text-danger fw-bold">Sobre</h3>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 mb-4">
+                    <img src="imagens/imagem sobre.jpg" class="img-fluid rounded shadow" alt="Sobre a empresa">
+                </div>
+                <div class="col-lg-7 col-md-12">
+                    <h3 class="text-danger">Paixão por carros e personalização</h3>
+                    <p class="sobre-texto">
+                        Fundada por amantes de carros, a <strong>Custom Car</strong> nasceu com o objetivo de oferecer
+                        as melhores peças, acessórios e soluções de customização automotiva. Nosso foco sempre foi
+                        entregar qualidade, bom atendimento e produtos que transformam qualquer carro em uma máquina
+                        única.
+                        <br><br>
+                        Trabalhamos com marcas reconhecidas no mercado, trazendo rodas, multimídias, escapamentos,
+                        kits de suspensão e muito mais. Seja para performance, estilo ou tecnologia, estamos aqui
+                        para ajudar você a deixar seu carro do jeito que sempre sonhou.
+                        <br><br>
+                        Aqui, cada detalhe importa. Seu carro merece o melhor — e nós sabemos disso.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-custom mt-5">
+        <div class="container text-center py-4">
+            <p class="mb-1">© 2025 <strong>Custom Car</strong>. Todos os direitos reservados.</p>
+            <p class="text-muted">Site criado para prática de HTML e CSS.</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/carrinho.js"></script>
+    <script src="javascript/avatarMenu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimídia – Custom Car</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="container-fluid header-bg">
+        <div class="container py-3">
+            <nav class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <a href="index.html" class="logo">Custom Car</a>
+                </div>
+                <div class="col-auto">
+                    <ul class="d-flex align-items-center gap-3 m-0">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Peças
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="rodas.html">Rodas</a></li>
+                                <li><a class="dropdown-item" href="escapamento.html">Escapamento</a></li>
+                                <li><a class="dropdown-item" href="suspensao.html">Suspensão</a></li>
+                                <li><a class="dropdown-item" href="autofalante.html">Autofalante</a></li>
+                                <li><a class="dropdown-item" href="multimidia.html">Multimídia</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="col-auto">
+                                <a href="carrinho.html" class="btn btn-outline-light position-relative">
+                                    🛒
+                                    <span id="contadorCarrinho"
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <div class="avatar-menu">
+                            <img src="imagens/avatar.png" alt="Avatar" class="avatar" onclick="toggleMenu()">
+                            <div id="dropdown" class="dropdown-content"></div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container-fluid catalogo py-5">
+        <div class="container">
+
+            <div class="text-center mb-4">
+                <h3 class="text-danger fw-bold">Multimídia</h3>
+                <p class="texto-paragrafo">Sistemas multimídia para entretenimento e tecnologia dentro do carro.</p>
+            </div>
+
+            <div class="produtos-custom row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/radio/multimidia pionner.png" class="card-img-top" alt="Multimídia Pionner">
+                        <div class="card-body">
+                            <h5 class="card-title">Multimídia Pionner</h5>
+                            <p class="card-text">Multimídia Pionner completa.</p>
+                            <span class="preco-produto">R$610,99</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/radio/multimia android.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Multimídia Android</h5>
+                            <p class="card-text">Compatível com Android Auto e espelhamento de tela.</p>
+                            <span class="preco-produto">R$564,40</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/radio/Multimídia Universal.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Multimídia Universal</h5>
+                            <p class="card-text">Sistema completo para todos os modelos de carro.</p>
+                            <span class="preco-produto">R$200,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/radio/multimidia suspensa.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Multimídia Suspensa</h5>
+                            <p class="card-text">Multimídia suspensa para painel.</p>
+                            <span class="preco-produto">R$310,99</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/radio/central multimida.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Central Multimídia Positron</h5>
+                            <p class="card-text">Android Auto, Apple CarPlay e Bluetooth.</p>
+                            <span class="preco-produto">R$699,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/radio/Sistema 2 DIN.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Sistema 2 DIN</h5>
+                            <p class="card-text">Tela touchscreen com controle de som.</p>
+                            <span class="preco-produto">R$250,009</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/radio/DVD Automotivo.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">DVD Automotivo</h5>
+                            <p class="card-text">Entretenimento completo para passageiros.</p>
+                            <span class="preco-produto">R$769,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/radio/multimidia retratil.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Multimídia Retratil</h5>
+                            <p class="card-text">Multimídia retratil.</p>
+                            <span class="preco-produto">R$807,40</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/radio/central multimidia pionner.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Central Multimídia Pionner</h5>
+                            <p class="card-text">Tela grande, GPS e som de alta qualidade.</p>
+                            <span class="preco-produto">R$1199,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-custom mt-5">
+        <div class="container text-center py-4">
+            <p class="mb-1">© 2025 <strong>Custom Car</strong>. Todos os direitos reservados.</p>
+            <p class="text-muted">Site criado para prática de HTML e CSS.</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/carrinho.js"></script>
+</body>
+</html>

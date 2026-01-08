@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autofalante – Custom Car</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="container-fluid header-bg">
+        <div class="container py-3">
+            <nav class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <a href="index.html" class="logo">Custom Car</a>
+                </div>
+                <div class="col-auto">
+                    <ul class="d-flex align-items-center gap-3 m-0">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Peças
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="rodas.html">Rodas</a></li>
+                                <li><a class="dropdown-item" href="escapamento.html">Escapamento</a></li>
+                                <li><a class="dropdown-item" href="suspensao.html">Suspensão</a></li>
+                                <li><a class="dropdown-item" href="autofalante.html">Autofalante</a></li>
+                                <li><a class="dropdown-item" href="multimidia.html">Multimídia</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="col-auto">
+                                <a href="carrinho.html" class="btn btn-outline-light position-relative">
+                                    🛒
+                                    <span id="contadorCarrinho"
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <div class="avatar-menu">
+                            <img src="imagens/avatar.png" alt="Avatar" class="avatar" onclick="toggleMenu()">
+                            <div id="dropdown" class="dropdown-content"></div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container-fluid catalogo py-5">
+        <div class="container">
+
+            <div class="text-center mb-4">
+                <h3 class="text-danger fw-bold">Autofalantes</h3>
+                <p class="texto-paragrafo">Sistemas de som para deixar seu carro potente e com qualidade.</p>
+            </div>
+
+            <div class="produtos-custom row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/autofalante/kit autofalnte.png" class="card-img-top" alt="Kit Autofalante Bravox">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit Autofalante Bravox</h5>
+                            <p class="card-text">Kit autofalante Bravox par de 6x9 + par de 6' 380w rms</p>
+                            <span class="preco-produto">R$232,99</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/autofalante/cara preta.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Pionner Cara Preta"</h5>
+                            <p class="card-text">Subwoofer Pionner cara preta 12' 350w rms.</p>
+                            <span class="preco-produto">R$350,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/autofalante/tweeter.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Tweeter profisional</h5>
+                            <p class="card-text">Tweeter profisional 120w rms.</p>
+                            <span class="preco-produto">R$99,99</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/autofalante/69 pionner.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit 6x6 Pionner</h5>
+                            <p class="card-text">Kit 6x9 Pionner 80w rms.</p>
+                            <span class="preco-produto">R$350,99</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/autofalante/subwoofer roadstar.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Subwoofer Roadstar</h5>
+                            <p class="card-text">Subwoofer Roadstar 12' 250w rms.</p>
+                            <span class="preco-produto">R$250,99</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/autofalante/2 vias.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit 2 vias JBL Flex</h5>
+                            <p class="card-text">Kit 2 vias JBL FLex 80w rms.</p>
+                            <span class="preco-produto">R$410,80</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/autofalante/pionner sub.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Subwoofer Pionner 12'"</h5>
+                            <p class="card-text">Subwoofer Pionner 12' 1200w rms.</p>
+                            <span class="preco-produto">R$550,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/autofalante/kit 6.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit 6' Leson</h5>
+                            <p class="card-text">Kit Leson 6' 140w rms.</p>
+                            <span class="preco-produto">R$232,99</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/autofalante/caixa trio.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Caixa trio"</h5>
+                            <p class="card-text">Caixa Trio 300w rms com modulo.</p>
+                            <span class="preco-produto">R$979,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-custom mt-5">
+        <div class="container text-center py-4">
+            <p class="mb-1">© 2025 <strong>Custom Car</strong>. Todos os direitos reservados.</p>
+            <p class="text-muted">Site criado para prática de HTML e CSS.</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/carrinho.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodas – Custom Car</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="container-fluid header-bg">
+        <div class="container py-3">
+            <nav class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <a href="index.html" class="logo">Custom Car</a>
+                </div>
+                <div class="col-auto">
+                    <ul class="d-flex align-items-center gap-3 m-0">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Peças
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="rodas.html">Rodas</a></li>
+                                <li><a class="dropdown-item" href="escapamento.html">Escapamento</a></li>
+                                <li><a class="dropdown-item" href="suspensao.html">Suspensão</a></li>
+                                <li><a class="dropdown-item" href="autofalante.html">Autofalante</a></li>
+                                <li><a class="dropdown-item" href="multimidia.html">Multimídia</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="col-auto">
+                                <a href="carrinho.html" class="btn btn-outline-light position-relative">
+                                    🛒
+                                    <span id="contadorCarrinho"
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <div class="avatar-menu">
+                            <img src="imagens/avatar.png" alt="Avatar" class="avatar" onclick="toggleMenu()">
+                            <div id="dropdown" class="dropdown-content"></div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container-fluid py-5 catalogo">
+        <div class="container">
+
+            <div class="text-center mb-4">
+                <h3 class="text-danger fw-bold">Rodas</h3>
+                <p class="texto-paragrafo">Confira nossa seleção de rodas esportivas e originais.</p>
+            </div>
+
+            <div class="produtos-custom row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/rodas/roda bbs.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Roda BBS Aro 18</h5>
+                            <p class="card-text">Furação 4x100 — Grafite diamantada</p>
+                            <span class="preco-produto">R$5.750,90</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/rodas/roda orbital.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Roda Orbital Aro 17</h5>
+                            <p class="card-text">Modelo clássico Volkswagen</p>
+                            <span class="preco-produto">R$4.000,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/rodas/roda kr.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Roda KR Aro 20</h5>
+                            <p class="card-text">Design robusto com acabamento premium</p>
+                            <span class="preco-produto">R$6.220,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/rodas/vulcano strong.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Roda Volcano Strong</h5>
+                            <p class="card-text">Aro 18 — Alta resistência e leveza</p>
+                            <span class="preco-produto">R$3.799,99</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/rodas/bmw m sport.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Roda BMW M-Sport</h5>
+                            <p class="card-text">Aro 19 — Original esportiva</p>
+                            <span class="preco-produto">R$6.077,50</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/rodas/audi rs.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Roda Audi RS</h5>
+                            <p class="card-text">Aro 20 — Design exclusivo</p>
+                            <span class="preco-produto">R$11.650,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/rodas/vulcano attack.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Roda Volcano Attack</h5>
+                            <p class="card-text">Aro 17 — Estilo agressivo</p>
+                            <span class="preco-produto">R$4.054,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/rodas/mercedes.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Roda Mercedes AMG </h5>
+                            <p class="card-text">Aro 20 — Original Mercedes</p>
+                            <span class="preco-produto">R$6.590,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom">
+                        <img src="imagens/rodas/porsche.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Roda Porsche</h5>
+                            <p class="card-text">Aro 21 — Original Porsche Panamera</p>
+                            <span class="preco-produto">R$11.890,00</span>
+                            <button class="adicionar-ao-carrinho btn btn-danger">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-custom mt-5">
+        <div class="container text-center py-4">
+            <p class="mb-1">© 2025 <strong>Custom Car</strong>. Todos os direitos reservados.</p>
+            <p class="text-muted">Site criado para prática de HTML e CSS.</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/carrinho.js"></script>
+</body>
+</html>

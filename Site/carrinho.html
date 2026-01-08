@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Custom Car</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="container-fluid header-bg">
+        <div class="container py-3">
+            <nav class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <a href="index.html" class="logo">Custom Car</a>
+                </div>
+                <div class="col-auto">
+                    <a href="index.html" class="btn btn-outline-light">⬅ Voltar</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <h2 class="text-center text-danger mb-4">Seu Carrinho</h2>
+
+        <div class="table-responsive">
+            <table class="table table-bordered align-middle text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Produto</th>
+                        <th>Descrição</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody id="listaCarrinho">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row justify-content-end mt-4">
+            <div class="col-md-4 text-end">
+                <h4>Total: <span id="totalCarrinho">R$ 0,00</span></h4>
+                <button class="finalizar-compra btn btn-danger w-100 mt-3">Finalizar Compra</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-custom mt-5">
+        <div class="container text-center py-4">
+            <p class="mb-1">© 2025 <strong>Custom Car</strong>. Todos os direitos reservados.</p>
+            <p class="text-muted">Site criado para prática de HTML e CSS.</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/carrinho.js"></script>
+</body>
+</html>

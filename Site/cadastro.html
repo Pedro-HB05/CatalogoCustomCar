@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - Project Custom Car</title>
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body>
+    <div class="container">
+      <form id="cadastroForm" onsubmit="event.preventDefault(); register();">
+        <h2>Cadastro</h2>
+        <input type="text" id="name" placeholder="Nome Completo" required />
+        <input type="email" id="emailCadastro" placeholder="Email" required />
+        <input type="password" id="passwordCadastro" placeholder="Senha" required />
+        <input
+          type="password"
+          id="confirmSenha"
+          placeholder="Confirmar Senha"
+          required
+        />
+        <button type="submit">Cadastrar</button>
+        <p>Já tem conta? <a href="login.html">Login</a></p>
+      </form>
+    </div>
+    <script src="javascript/cadastro.js"></script>
+  </body>
+</html>
